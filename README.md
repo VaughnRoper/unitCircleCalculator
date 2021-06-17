@@ -1,5 +1,7 @@
 # unitCircleCalculator
 
+(this is the version meant for command line use, with no UI. for the version with UI, see the master branch)
+
 For Calculating the matrix of transformations on the unit circle.
 Takes an angle from the start of a transformation and the angle the transform should end on, then outputs the matrix that encodes that transform.
 
