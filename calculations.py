@@ -25,7 +25,11 @@ while True:
         TimesOk += 1
         DisplayText = 'enter angle that transformation should result in'
         window['-Directions-'].update(DisplayText)
+        window['-Input-'].update('')
         for i in range(int(TimesOk-1)):
+            TimesOk = 0
+            DisplayText = 'enter starting angle'
+            window['-Directions-'].update(DisplayText)
             startRaydian = degreeToRaydians(int(angleList[0]))
             finalRaydian = degreeToRaydians(int(angleList[1]))
             # convert raydians to vectors by taking their sines and cosines
@@ -49,7 +53,9 @@ while True:
         angleList = [0, 0]
         DisplayText = 'enter starting angle'
         window['-Directions-'].update(DisplayText)
-        window['-Input-'].update(value=None)
+        window['-Input-'].update('')
+        window['-output1-'].update('')
+        window['-output2-'].update('')
     if event == 'Quit' or event == sg.WIN_CLOSED:
         break
 window.close()
